@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/*头部*/
+.head{
+    width:7.5rem;
+    height:1.8rem;
+    padding:0 0.24rem;
+    box-sizing:border-box;
+    background: rgb(255, 0, 54);
+    position:fixed;
+    top:0;
+    overflow: hidden;
+    z-index:10;
+}
+.head .header{
+    width:7.02rem;
+    height:0.88rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.head .header .iconfont{
+    /* float:left; */
+    font-size:0.6rem;
+    color:#fff;
+}
+.head .header img{
+    width:2.36rem;
+    height:0.4rem;
+}
+.head .header .dengl{
+    height:0.88rem;
+    line-height:0.88rem;
+    width:auto;
+    font-size:0.28rem;
+    color:#fff;
+}
+.head .search{
+    width:7.02rem;
+    height:0.72rem;
+    box-sizing:border-box;
+    background:#fff;
+    border-radius:0.08rem;
+    box-sizing:border-box;
+    line-height:0.72rem;
+}
+.head .search .iconfont{
+    font-size:0.28rem;
+    color:#BBC1BD;
+    margin-left:0.1rem;
+    margin-right: 0.04rem;
+
+}
+.head .search .sear{
+    width:60%;
+    height:0.7rem;
+    border:0;
+    outline: none;
+}
+.head .search .sear::-webkit-input-placeholder{
+    font-size:0.3rem;
+    color:#D4D8D5;
+}
+/*导航*/
+.nav{
+    width:7.5rem;
+    height:1.54rem;
+    padding: 0 0.24rem;
+    box-sizing:border-box;
+    margin-top:1.8rem;
+}
+.nav .box{
+    display: block;
+    height:100%;
+    width:20%;
+    float:left;
+    text-align:center;
+}
+.nav .box img{
+    width:0.96rem;
+    height:0.96rem;
+    margin:0.1rem 0.22rem  0.04rem ;
+}
+.nav .box span{
+    font-size:0.26rem;
+    color:#000;
+}
+/*轮播*/
+.slideshow{
+    width: 7.5rem;
+    height: 2.46rem;
+    margin-top: 0.2rem;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.slideshow .banner{
+    width: 7.02rem;
+    height: 100%;
+    position: relative;;
+}
+.slideshow .banner .bannerin{
+    width: 7.02rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slideshow .banner .bannerin img{
+    width: 100%;
+    height: 2.46rem;
+}
+.slideshow .dian{
+    width: 7.02rem;
+    height: 0.04rem;
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow .dian .box{
+    width: 0.32rem;
+    height: 0.04rem;
+    margin: 0 0.05rem;
+    background: #fff;
+}
+/*轮播下*/
+.zhut{
+    width: 7.5rem;
+    height: 3.6rem;
+    /* padding: 0 0.24rem; */
+    box-sizing: border-box;
+}
+.zhut img{
+    width:7.5rem;
+    height:auto;
+}
+/*限时抢购*/
+.timebox{
+    width: 7.5rem;
+    height: 5.46rem;
+    padding: 0.2rem 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.timebox .time{
+    width: 3.44rem;
+    height: 2.57rem;
+    position: relative;
+    background-image: url(../img/timeb.jpg);
+    background-repeat: no-repeat;
+    background-size: 3.44rem;
+}
+.timebox .time .top{
+    display:block;
+    height: 0.32rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    margin: 0.3rem 0 0 0.3rem;
+    line-height: 0.32rem;
+    color: rgb(32, 32, 32);
+}
+.timebox .time .bottom{
+    width: auto;
+    height: 5.26rem;
+    margin-top: 0.15rem;
+    display: flex;
+    justify-content: space-between;
+}
+.timebox .time .bottom .box{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.12rem;
+    position: relative;
+}
+.timebox .time .bottom .box img{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.timebox .time .bottom .box .text{
+    display:block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    white-space: nowrap;
+    border: 0.5px solid rgb(255, 0, 54);
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: 10px;
+    max-width: 77.5px; 
+    width:auto;
+    height: 12px;
+    text-overflow: ellipsis;
+    background-color: rgb(255, 237, 241);
+    line-height: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 1px;
+    color: rgb(255, 0, 54);
+    text-align: center;
+    overflow: hidden;
+
+}
