@@ -56,7 +56,7 @@
 }
 .head .search .sear{
     width:60%;
-    height:0.7rem;
+    height:0.68rem;
     border:0;
     outline: none;
 }
@@ -147,7 +147,6 @@
     padding: 0.2rem 0.24rem 0 0.24rem;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -188,33 +187,325 @@
     position: absolute;
     left:0;
     top:0;
+    /* background:#fff; */
 }
 .timebox .time .bottom .box .text{
-    display:block;
+
     position: absolute;
     bottom:0;
     left:0;
-    right:0;
-    margin:0 auto;
-    white-space: nowrap;
-    border: 0.5px solid rgb(255, 0, 54);
-    box-sizing: border-box;
-    -webkit-box-orient: vertical;
-    flex-direction: column;
-    align-content: flex-start;
-    flex-shrink: 0;
-    font-size: 10px;
-    max-width: 77.5px; 
-    width:auto;
-    height: 12px;
-    text-overflow: ellipsis;
-    background-color: rgb(255, 237, 241);
-    line-height: 12px;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 1px;
-    color: rgb(255, 0, 54);
-    text-align: center;
-    overflow: hidden;
+    width:1.5rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    display:flex;
+    justify-content: center；
 
 }
+.timebox .time .bottom .box .text span{
+    border: 0.01rem solid rgb(255, 0, 54);
+    font-size: 0.2rem;
+    border-radius: 0.01rem;
+    color: rgb(255, 0, 54);
+    background: rgb(255, 237, 241);
+    display: block;
+    width: auto;
+    line-height: 0.28rem;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    height: 0.24rem;
+}
+/*榜单*/
+.bd{
+    width: 7.5rem;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.bd .bdin{
+    margin-top: 0.2rem;
+    width: 7.02rem;
+}
+.bd .bdin .top{
+    height: 0.6rem;
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    line-height: 0.6rem;
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    line-height: 0.6rem;
+}
+.bd .bdin .center{
+    margin-bottom: 0.12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.bd .bdin .center .bdcard{
+    display: block;
+    background: url(../img/bd0.webp) no-repeat;
+    height: 2.73rem;
+    width: 2.26rem;
+    margin: 0 0.03rem;
+    border-radius: 0.03rem;
+    position: relative;
+}
+.bd .bdin .center .bdcard2{
+    height: 2.99rem;
+    background-color: rgb(248, 248, 248);
+}
+.bd .bdin .center .bdcard .imgtop{
+    width: 0.63rem;
+    height: 0.51rem;
+    position: absolute;
+    top: 0;
+    left: 0.06rem;
+}
+
+.bd .bdin .center .bdcard .image{
+    width: 1.46rem;
+    height: 1.46rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 0.36rem auto 0;
+}
+.bd .bdin .center .bdcard .image img{
+    width: 1.46rem;
+    height: 1.46rem;
+}
+.bd .bdin .center .bdcard .font1{
+    width: 2.08rem;
+    height: 0.36rem;
+    flex-direction: column;
+    background: -webkit-linear-gradient(left,#5D6FCF,#384CA7);
+    border-radius: 0.4rem;
+    margin: 0.04rem auto 0;
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+    text-align: center;
+    color: #fff;
+}
+.bd .bdin .center .bdcard .font2{
+    font-size: 0.24rem;
+    color: #000;
+    margin-top: 0.04rem;
+    text-align: center;
+}
+.bd .bdin .bottom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 7.02rem;
+    height: 3.62rem;
+}
+.bd .bdin .bottom .bdbox{
+    display:block;
+    width: 3.45rem;
+    height: 1.69rem;
+    margin: 0.12rem 0.06rem 0;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+    border-radius: 0.06rem;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bd .bdin .bottom .bdbox .left{
+    height: 1.35rem;
+    margin-left: 0.26rem;
+}
+.bd .bdin .bottom .bdbox .left .text1{
+    display: block;
+    font-size: 0.22rem;
+    color: rgb(200, 157, 107);
+    line-height: 0.4rem;
+    width:100%;
+}
+.bd .bdin .bottom .bdbox .left .line{
+    width: 0.22rem;
+    height: 0.03rem;
+    margin: 0.04rem 0 0.12rem 0;
+    background-color: rgb(227, 227, 227);
+}
+.bd .bdin .bottom .bdbox .left .text2{
+    font-size: 0.24rem;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+    line-height: 0.38rem;
+    width:100%;
+    display: block;
+}
+.bd .bdin .bottom .bdbox .left .text3{
+    display: block;
+    font-size: 0.24rem;
+    color: rgb(153, 153, 153);
+    line-height: 0.38rem;
+    width:100%;
+}
+.bd .bdin .bottom .bdbox .right{
+    width: 1.1rem;
+    height: 1.1rem;
+    background: rgba(0, 0, 0, 0.03);
+    margin-right: 0.08rem;
+}
+.bd .bdin .bottom .bdbox .right img{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+/*猜你喜欢*/
+.like{
+    width: 7.5rem;
+    height: 0.8rem;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.like .lfont{
+    margin-top: 0.2rem;
+    font-size: 0.36rem;
+    color: rgb(51, 51, 51);
+    line-height: 0.6rem;
+    font-weight: bold;
+}
+/**/
+.bottomCard{
+    width:7.5rem;
+    padding:0 0.24rem;
+    box-sizing:border-box;
+    position:relative;
+}
+.bottomCard .backgroundCard{
+    width:7.5rem;
+    height:2.94rem;
+    position:absolute;
+    top:0;
+    left:0
+}
+.bottomCard .samllCard{
+    width:7.02rem;
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.bottomCard .samllCard .card{
+    width:3.4rem;
+    margin: 0.1rem 0.1rem 0.1rem 0;
+    background:rgb(255, 255, 255);
+    position:relative;
+    overflow: hidden;
+    border:0.01rem solid rgb(237, 237, 237);
+    box-sizing: border-box;
+}
+.bottomCard .samllCard .card2{
+    width:3.4rem;
+    height:6.22rem;
+    margin: 0.1rem 0.1rem 0.1rem 0;
+    overflow: hidden;
+}
+.bottomCard .samllCard .card3{
+    margin: 0.1rem 0 0.1rem 0.1rem;
+}
+.bottomCard .samllCard .card4{
+    margin:0;
+}
+.bottomCard .samllCard .card .seacrh{
+    display:block;
+    position:absolute;
+    right:0.16rem;
+    bottom:0.08rem;
+    border-radius:0.18rem;
+    height:0.46rem;
+    line-height:0.46rem;
+    background:rgb(255, 230, 235);
+    padding:0 0.18rem;
+    font-size:0.22rem;
+    color:rgb(255, 0, 54);
+}
+.bottomCard .samllCard .card .content{
+    cursor: pointer;
+    width: 3.4rem;
+    height:auto;
+    background:rgba(0, 0, 0, 0.03);
+}
+.bottomCard .samllCard .card .content .img{
+    padding:0.3rem;
+    height:2.76rem;
+    width:2.76rem;
+}
+.bottomCard .samllCard .card .content .img img{
+    width:2.76rem;
+    height:2.76rem;
+}
+.bottomCard .samllCard .card .lengthCard{
+    height:0.36rem;
+    background:rgb(205, 163, 177);
+    position:absolute;
+    top:3.18rem;
+    margin-left:0.2rem;
+    padding:0 0.1rem;
+    font-size:0.2rem;
+    color:#fff;
+    display:flex;
+    align-items:center;
+}   
+.bottomCard .samllCard .card .lengthCard2{
+    background:rgb(136, 163, 192);
+}
+.bottomCard .samllCard .card .lengthCard img{
+    width:0.36rem;
+    height:0.24rem;
+    margin-right:0.1rem;
+}
+.bottomCard .samllCard .card .bottom{
+    padding:0.2rem 0.2rem 0;
+}
+.bottomCard .samllCard .card .text{
+    font-size:0.28rem;
+    text-align:left;
+    line-height:0.36rem;
+    margin:0.04rem 0;
+    color:rgb(62, 62, 62);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.bottomCard .samllCard .card .textTwo{
+    height:0.28rem;
+    box-sizing: border-box;
+    font-size:0.22rem;
+    line-height:0.26rem;
+    color: rgb(74, 144, 226);
+    margin-top:0.06rem;
+    padding:0.01rem 0.02rem;
+}
+.bottomCard .samllCard .card .textTwo span{
+    border: 0.01rem solid rgb(74, 144, 226);
+}
+.bottomCard .samllCard .card .money{
+    font-size:0.32rem;
+    color:rgb(255, 0, 0);
+    font-weight:600;
+    line-height:0.56rem;
+    margin-left:0.2rem;
+}
+.bottomCard .samllCard .card2 .logo {
+    width:3.4rem;
+    height:6.22rem;
+    display:block;
+    overflow: hidden;
+}
+.bottomCard .samllCard .card2 .logo img{
+    display:flex;
+    width:3.4rem;
+    height:6.22rem;
+}
+
+
+
